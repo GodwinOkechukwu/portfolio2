@@ -49,7 +49,7 @@ const Skills = () => {
   return (
     <section
       className="px-4 bg-cover bg-no-repeat bg-center h-full pb-4 md:h-screen"
-      id="skills"
+      id="skillss"
       style={{ backgroundImage: `url('${skillsbg}')` }}>
       <Navbar />
       <h2 className="text-2xl md:text-3xl text-gray-200 font-bold text-center mb-10">
