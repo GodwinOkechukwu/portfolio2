@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import skillsbg from "../assets/skillsbg.jpg";
 import { motion } from "framer-motion";
 import { FaHtml5, FaReact, FaGitAlt, FaFigma } from "react-icons/fa";
 import { SiTailwindcss, SiVercel } from "react-icons/si";
+import StarfieldBackground from "../components/StarfieldBackground";
 
 const Skills = () => {
   const skills = [
@@ -49,9 +49,9 @@ const Skills = () => {
   return (
     <section
       className="px-4 bg-cover bg-no-repeat bg-center h-full pb-4 md:h-screen"
-      id="skillss"
-      style={{ backgroundImage: `url('${skillsbg}')` }}>
+      id="skillss">
       <Navbar />
+      <StarfieldBackground />
       <h2 className="text-2xl md:text-3xl text-gray-200 font-bold text-center mb-10">
         My Skillset
       </h2>

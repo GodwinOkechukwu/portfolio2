@@ -1,15 +1,13 @@
 import React from "react";
 import Navbar from "../components/Navbar";
-import homebg from "../assets/homebg2.jpg";
 import { motion } from "framer-motion";
+import StarfieldBackground from "../components/StarfieldBackground";
 
 const Home = () => {
   return (
-    <div
-      className="bg-cover bg-no-repeat bg-center h-screen w-full"
-      style={{ backgroundImage: `url('${homebg}')` }}>
+    <div className="bg-cover bg-no-repeat bg-center h-screen w-full">
       <Navbar />
-
+      <StarfieldBackground />
       <div className="w-full mt-16 md:mt-11">
         <motion.article
           initial={{ opacity: 0, y: 30 }}

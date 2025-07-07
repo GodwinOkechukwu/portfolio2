@@ -10,13 +10,13 @@ import {
 } from "react-icons/fa";
 import { SiGithub, SiLinkedin } from "react-icons/si"; // Social icons
 import resume from "../assets/resume.pdf";
+import StarfieldBackground from "../components/StarfieldBackground";
 
 const Resume = () => {
   return (
-    <div
-      className="bg-gray-100 bg-cover bg-no-repeat bg-center min-h-screen pb-8 text-gray-200"
-      style={{ backgroundImage: `url('${resumebg}')` }}>
+    <div className="min-h-screen pb-8 text-gray-200">
       <Navbar />
+      <StarfieldBackground />
       <div className="max-w-6xl mx-auto px-6 md:px-12">
         {/* Introduction Section */}
         <motion.section
