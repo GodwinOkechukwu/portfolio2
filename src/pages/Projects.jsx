@@ -1,11 +1,11 @@
 import React from "react";
-import projectbg from "../assets/projectbg.jpg";
 import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import payina from "../assets/payina.png";
-import jobHub from "../assets/nxgJobHub.png";
+import jobHub from "../assets/lynotechPic.jpg";
 import nextgen from "../assets/nextgenhub.png";
-import port from "../assets/portscreenshot.jpg";
+import port from "../assets/lynspeedPic.jpg";
+import StarfieldBackground from "../components/StarfieldBackground";
 
 const projects = [
   {
@@ -17,12 +17,12 @@ const projects = [
     link: "https://payina.com.ng/",
   },
   {
-    title: "Job Hub Website",
+    title: "LYNSPEED",
     description:
-      "A Job Hub Website where users can register as either talents or employers. Talents can apply for jobs, while employers can post job openings. The platform includes search and filter features, along with a subscription payment plan for added functionality.",
+      "LYNSPEED is a comprehensive platform designed to help students excel in the Joint Admissions and Matriculation Board (JAMB) examinations through a variety of innovative features",
     tech: "React, Tailwind CSS, Redux, Java, Springboot, MongoDB",
-    image: jobHub,
-    link: "https://nxgjobhub.com/",
+    image: port,
+    link: "https://www.lynspeed.com.ng/",
   },
   {
     title: "IT Company Website",
@@ -33,21 +33,19 @@ const projects = [
     link: "https://nextgenhub.com.ng/",
   },
   {
-    title: "Porfolio 1.0",
-    description: "My previous Portfolio",
+    title: "LYNOTECH",
+    description: "A landing page website for lynotech",
     tech: "React, Tailwind CSS,",
-    image: port,
-    link: "https://my-portfolio-eight-wheat-64.vercel.app/",
+    image: jobHub,
+    link: "https://lynogtech.vercel.app/",
   },
 ];
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="pb-16 bg-gray-100 bg-cover bg-no-repeat bg-center h-full"
-      style={{ backgroundImage: `url('${projectbg}')` }}>
+    <section id="projects" className="pb-16 h-full">
       <Navbar />
+      <StarfieldBackground />
       <motion.h2
         className="text-3xl font-bold text-center text-gray-200 mb-10"
         initial={{ opacity: 0, y: 30 }}
@@ -60,7 +58,7 @@ const Projects = () => {
         {projects.map((project, index) => (
           <motion.div
             key={index}
-            className="bg-white p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="bg-gray-200 p-6 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 ease-in-out"
             whileHover={{ scale: 1.0 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -74,11 +72,11 @@ const Projects = () => {
               alt={project.title}
               className="w-full h-40 object-cover rounded-t-lg mb-4"
             />
-            <h3 className="text-xl font-semibold text-gray-800 mb-2">
+            <h3 className="text-xl font-semibold text-black  mb-2">
               {project.title}
             </h3>
-            <p className="text-gray-600 mb-2">{project.description}</p>
-            <p className="text-sm text-gray-500">Tech: {project.tech}</p>
+            <p className=" mb-2 text-black">{project.description}</p>
+            <p className="text-sm text-black">Tech: {project.tech}</p>
             <a
               href={project.link}
               target="_blank"
