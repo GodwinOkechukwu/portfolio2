@@ -37,7 +37,7 @@ const projects = [
     description: "A landing page website for lynotech",
     tech: "React, Tailwind CSS,",
     image: jobHub,
-    link: "https://lynogtech.vercel.app/",
+    link: "https://www.lynogtech.com.ng/",
   },
 ];
 
